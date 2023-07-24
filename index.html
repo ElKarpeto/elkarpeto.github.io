@@ -3,16 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mencoba Github Pages</title>
-    <style>
-      .judul {
-        color: aqua;
-        font-size: 20px;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-    </style>
+    <title>Ceritanya Ucapan Semangat</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        alert(
+          "maaf ya kalo kurang bagus, soalnya aku kurang bisa web programming"
+        );
+
+        main_div = document.getElementById("main-container");
+        main_div.style.display = "block";
+      });
+    </script>
   </head>
   <body>
-    <h1 class="judul">Coba Github Pages</h1>
+    <div id="main-container" style="display: none">
+      <h1>Hallo, Juwiii</h1>
+      <div class="container">
+        <div class="gambar3">
+          <img src="cheers-up-3.gif" alt="yahh ga ke reload gambarnya" />
+        </div>
+        <div class="gambar1">
+          <img src="cheers-up-1.gif" alt="yahh ga ke reload gambarnya" />
+        </div>
+      </div>
+      <div class="ucapan">
+        Semangat KSM Provinsi nya yaa, ntar kasi tau aku ya kabar baik nyaa 😁😁
+      </div>
+      <div class="gambar2">
+        <img src="cheers-up-2.gif" alt="yahh ga ke reload gambarnya" />
+      </div>
+    </div>
   </body>
 </html>
