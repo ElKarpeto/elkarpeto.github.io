@@ -1,23 +1,56 @@
-#main-container {
-  text-align: center;
-  margin: auto;
+@media (min-width: 721px) {
+  #main-container {
+    text-align: center;
+    margin: auto;
+  }
+
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+  }
+
+  .ucapan {
+    margin: 16px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+  }
 }
 
-h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 60px;
-}
+$ukuran: 100%;
+@media (max-width: 720px) {
+  #main-container {
+    text-align: center;
+  }
 
-.container {
-  display: flex;
-  text-align: center;
-  margin-left: 20px;
-  margin-right: 20px;
-}
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 75px;
+  }
 
-.ucapan {
-  margin: 16px;
-  padding: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 25px;
+  .ucapan {
+    margin: 16px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .gambar1 {
+      width: $ukuran;
+      height: $ukuran;
+    }
+    .gambar3 {
+      width: $ukuran;
+      height: $ukuran;
+    }
+  }
 }
