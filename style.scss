@@ -10,9 +10,11 @@
   }
 
   .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     text-align: center;
+    .gambar-container {
+      display: inline-block;
+      vertical-align: middle;
+    }
   }
 
   .ucapan {
@@ -44,11 +46,7 @@ $ukuran: 100%;
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    .gambar1 {
-      width: $ukuran;
-      height: $ukuran;
-    }
-    .gambar3 {
+    .gambar-container {
       width: $ukuran;
       height: $ukuran;
     }

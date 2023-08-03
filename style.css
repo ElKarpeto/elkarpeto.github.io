@@ -8,9 +8,11 @@
     font-size: 60px;
   }
   .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     text-align: center;
+  }
+  .container .gambar-container {
+    display: inline-block;
+    vertical-align: middle;
   }
   .ucapan {
     margin: 16px;
@@ -37,11 +39,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .container .gambar1 {
-    width: 100%;
-    height: 100%;
-  }
-  .container .gambar3 {
+  .container .gambar-container {
     width: 100%;
     height: 100%;
   }
