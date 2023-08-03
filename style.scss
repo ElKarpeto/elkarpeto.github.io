@@ -44,9 +44,10 @@ $ukuran: 100%;
   }
 
   .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    text-align: center;
     .gambar-container {
+      display: inline-block;
+      vertical-align: middle;
       width: $ukuran;
       height: $ukuran;
     }
