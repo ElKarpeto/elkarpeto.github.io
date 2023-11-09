@@ -1,4 +1,4 @@
-@media (min-width: 721px) {
+@media (min-width: 1081px) {
   #main-container {
     text-align: center;
     margin: auto;
@@ -21,7 +21,7 @@
     font-size: 30px;
   }
 }
-@media (max-width: 750px) {
+@media (max-width: 1080px) {
   #main-container {
     text-align: center;
     width: 720px;
