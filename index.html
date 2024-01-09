@@ -1,41 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ceritanya HBD</title>
-    <link rel="shortcut icon" href="cheer-up-4.png" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        alert("Maap kalo jelek ngab, masih belajar");
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>apaaa nihh??</title>
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Salsa"
+        />
 
-        main_div = document.getElementById("main-container");
-        main_div.style.display = "block";
-      });
-    </script>
-  </head>
-  <body>
-    <div id="main-container" style="display: none">
-      <h1>🎉🎉Hallo, ngab🎉🎉</h1>
-      <div class="container">
-        <img
-          src="cheers-up-3.gif"
-          alt="yahh ga ke reload GIF-nya"
-          class="gambar-container"
-        />
-        <img
-          src="cheers-up-1.gif"
-          alt="yahh ga ke reload GIF-nya"
-          class="gambar-container"
-        />
-      </div>
-      <div class="ucapan">🎉🎉🎉🎉 Happy Birth Day ngab JOE 🎉🎉🎉🎉</div>
-      <img
-        src="cheers-up-2.gif"
-        alt="yahh ga ke reload GIF-nya"
-        class="gambar2"
-      />
-    </div>
-  </body>
+        <link rel="stylesheet" href="style.css">
+
+        <script>
+            function displayAll() {
+                alert(
+                    "maap yaa kalo misalnya masih jelekk, soalnya aku masih belajar😅😅"
+                );
+
+                document.querySelector("#allContent").style.display = "block";
+            }
+
+            let count = 3;
+            function displayHBD() {
+                if (count > 0) {
+                    document.querySelector("#textTombol1").style.display =
+                        "none";
+                    document.querySelector(
+                        "#textTombol2"
+                    ).innerHTML = `pencet lagi tombolnyaaa, tinggal ${count} kali pencet lagiii`;
+                    document.querySelector("#counter").innerHTML = count;
+                    count--;
+                } else {
+                    document.querySelector("#hbd").style.display = "block";
+                    document.querySelector("#tombol").style.display = "none";
+                    document.title = "Selamat Ulang Tahun Juwii";
+                }
+            }
+
+            function displayTime() {
+                const timeDay = new Date();
+                let hours = timeDay.getHours();
+
+                if (hours >= 22) {
+                    document.getElementById(
+                        "jamSekarang"
+                    ).innerHTML = `ehhhh, karna sekarang udah jam ${
+                        hours - 12
+                    } malemm, jadiii kamu harus tidurr🥱🥱😴`;
+                } else if (hours < 4) {
+                    document.getElementById(
+                        "jamSekarang"
+                    ).innerHTML = `ehhhh, karna sekarang masih jam ${hours} pagii, jadiii kamu harus tidurr🥱🥱😴`;
+                }
+            }
+
+            document.addEventListener("DOMContentLoaded", () => {
+                displayAll();
+                displayTime();
+                document.querySelector("#tombolHBD").onclick = displayHBD;
+            });
+        </script>
+    </head>
+    <body>
+        <div id="allContent" style="display: none">
+            <div id="tombol">
+                <h1 id="textTombol1">apa nihhhh???😱🤔🤔</h1>
+                <h3 id="textTombol2">
+                    bisa dongg di klik tombolnya (ngga bahaya kok, tenang ajaa)
+                </h3>
+                <h1 id="counter"></h1>
+                <button id="tombolHBD">tombolnyaa</button>
+            </div>
+
+            <div id="hbd" style="display: none">
+                <h1>🎉🎉🎆🎇Selamat Ulang Tahun Juwiii🎆🎇🎉🎉</h1>
+                <!-- HBD yaaa kakak terimutt dan orang terlucuuu hahahahaha,
+                    semoga nihh yaaa apa yang kamu semogakan tersemogakan
+                    secepet-cepetnya dan pastinya yang terbaikk dehh 😁😁😁 -->
+                <p id="text-ultah1">
+                    HBD yaaa kakak terimutt dan terlucuuu hahahahaha, semoga
+                    nihh yaaa apa yang kamu semogakan tersemogakan
+                    secepet-cepetnya dan pastinya yang terbaikk dehh 😁😁😁
+                </p>
+                <h4 id="text-ultah2">
+                    oh iyaaa, ngga lupa, semoga kamu bisa dapet PTN yang kamu
+                    mauu (semoga nihh yaa, kamu dapet di top 10 yeyyy)
+                </h5>
+
+                <h3 id="jamSekarang"></h3>
+            </div>
+        </div>
+    </body>
 </html>
