@@ -6,9 +6,12 @@
         <title>apaaa nihh??</title>
         <link
             rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Salsa"
+            href="https://fonts.googleapis.com/css?family=Lemon"
         />
-
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Shantell Sans"
+        />
         <link rel="stylesheet" href="style.css">
 
         <script>
@@ -32,7 +35,7 @@
                     count--;
                 } else {
                     document.querySelector("#hbd").style.display = "block";
-                    document.querySelector("#tombol").style.display = "none";
+                    document.querySelector("#centered").style.display = "none";
                     document.title = "Selamat Ulang Tahun Juwii";
                 }
             }
@@ -63,31 +66,44 @@
     </head>
     <body>
         <div id="allContent" style="display: none">
-            <div id="tombol">
-                <h1 id="textTombol1">apa nihhhh???😱🤔🤔</h1>
-                <h3 id="textTombol2">
-                    bisa dongg di klik tombolnya (ngga bahaya kok, tenang ajaa)
-                </h3>
-                <h1 id="counter"></h1>
-                <button id="tombolHBD">tombolnyaa</button>
+            <div id="centered">
+                <div id="tombol">
+                    <h1 id="textTombol1">apa nihhhh???😱🤔🤔</h1>
+                    <h3 id="textTombol2">
+                        bisa dongg di klik tombolnya (ngga bahaya kok, tenang ajaa)
+                    </h3>
+                    <h1 id="counter"></h1>
+                    <button id="tombolHBD">tombolnyaa</button>
+                </div>
             </div>
 
             <div id="hbd" style="display: none">
-                <h1>🎉🎉🎆🎇Selamat Ulang Tahun Juwiii🎆🎇🎉🎉</h1>
-                <!-- HBD yaaa kakak terimutt dan orang terlucuuu hahahahaha,
-                    semoga nihh yaaa apa yang kamu semogakan tersemogakan
-                    secepet-cepetnya dan pastinya yang terbaikk dehh 😁😁😁 -->
-                <p id="text-ultah1">
-                    HBD yaaa kakak terimutt dan terlucuuu hahahahaha, semoga
-                    nihh yaaa apa yang kamu semogakan tersemogakan
-                    secepet-cepetnya dan pastinya yang terbaikk dehh 😁😁😁
-                </p>
-                <h4 id="text-ultah2">
-                    oh iyaaa, ngga lupa, semoga kamu bisa dapet PTN yang kamu
-                    mauu (semoga nihh yaa, kamu dapet di top 10 yeyyy)
-                </h5>
+                <h1 id="judul-ucapan">🎉🎉Selamat Ulang Tahun Juwiii🎉🎉</h1>
 
+                <div id="gambar-atas">
+                    <img src="asets/hbd-3.gif" alt="yahh gambarnya ngga ke load" id="gambar-1">
+                    <img src="asets/hbd-2.gif" alt="yahh gambarnya ngga ke load" id="gambar-2">
+                </div>
+                
+                <div id="text-ucapan">
+                    <p id="text1">
+                        HBD yaaa kakak terimutt dan terlucuuu hahahahaha, semoga
+                        nihh yaaa apa yang kamu semogakan tersemogakan
+                        secepet-cepetnya dan pastinya yang terbaikk dehh 😁😁😁
+                    </p>
+                    <h4 id="text2">
+                        oh iyaaa, ngga lupa, semoga kamu bisa dapet PTN yang kamu
+                        mauu (top 10 siii pastinyaaa)
+                    </h5>
+                </div>
+                
                 <h3 id="jamSekarang"></h3>
+
+                <div id="gambar-bawah">
+                    <img id="gambar-3" src="asets/hbd-1.gif" alt="yahh gambarnya ngga ke load">
+                    <img src="asets/hbd-4.gif" alt="yahhh gambarnya ngga ke load" id="gambar-4">
+                </div>
+
             </div>
         </div>
     </body>

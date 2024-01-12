@@ -1,5 +1,75 @@
-$font: "Salsa", sans-serif;
+$font1: "Lemon", sans-serif;
+$font2: "Shantell Sans", sans-serif;
 
-#tombol {
-    font-family: $font;
+@media (min-width: 721px) {
+    #tombolHBD {
+        background: #f3f3ff;
+        border-radius: 999px;
+        box-shadow: #38383f 0 10px 20px -10px;
+        box-sizing: border-box;
+        color: black;
+        cursor: pointer;
+        font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji",
+            NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol",
+            "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI",
+            Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        opacity: 1;
+        outline: 0 solid transparent;
+        padding: 8px 18px;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: fit-content;
+        word-break: break-word;
+        border: 1px solid black;
+    }
+
+    #centered {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        font-family: $font2;
+        #tombol {
+            text-align: center;
+            padding: 20px;
+            border: 2px solid #333;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+    }
+
+    #hbd {
+        font-family: $font2;
+        #judul-ucapan {
+            text-align: center;
+            font-family: $font1;
+            font-size: 48px;
+        }
+
+        #gambar-atas,
+        #gambar-bawah {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                max-width: 25%;
+                height: auto;
+                margin: 5px;
+            }
+        }
+
+        #text-ucapan {
+            margin: 50px;
+            padding: 10px;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 750px) {
 }
